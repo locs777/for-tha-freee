@@ -21,6 +21,7 @@ overflow: hidden;
 .gradient { 
 position: absolute;
 inset: 0; 
+z-index: 1;
 background: linear-gradient(
 120deg,
 #c9f7d4,
@@ -41,7 +42,7 @@ animation: move 12s ease infinite;
 #typing {
 font-size: clamp(2.5rem, 6vw, 5rem);
 font-weight: 600;
-color: rgba(255,255,0.25);
+color: #000;
 backdrop-filter: blur(14px);
 -webkit-backdrop-filter: blur(14px);
 border-radius: 12px;
