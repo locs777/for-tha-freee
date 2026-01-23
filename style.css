@@ -52,7 +52,7 @@ z-index: 2;
 
 /* ENTER BUTTON */
 #enter {
-position: absolute;
+position: relative;
 bottom: 40px;
 font-size: 2rem; 
 background: transparent;
