@@ -113,5 +113,23 @@ export default function iPodPlayer() {
 })}
 </div>
 </div>
+const gradient=document.querySelector("gradient");
+
+// Track mouse and map to background
+document.addEventListener("mousemove", (e) => {
+  const {innerwidth, innerHeight } = window;
+  
+  // Normalized positions (0 to 100)
+const x = (e.clientX / innerWidth) * 100;
+const y = (e.clientY / innerHeight) * 100;
+
+//Slight movement (offsets to keep subtle)
+gradient.style.backgroundPosition = `
+calc(${x}% + 10%) calc(${y}% + 5%(,
+calc(${100 - x}% + 5%) calc(${y} + 5%)
+calc (${x / 2}% + 20 %) calc (${100 - y / 2}% + 10%),
+calc(${100 - x / 3}% calc($y / 3}% + 5%)
+  
+  `; 
 );
 }
