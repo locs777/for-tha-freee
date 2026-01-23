@@ -24,15 +24,16 @@ inset: 0;
 z-index: 1;
 
 background: 
-radial-gradient(60% 60% at 20% 20%, #c9f7d4 0%, transparent 70%),
-radial-gradient(70% 70% at 80% 30%, #e6e6e6 0%, transparent 75%), 
-radial-gradient(60% 60% at 50% 80%, #ffffff 0%, transparent 70%);
+radial-gradient(20% 30%, #c9f7d4 0%, transparent 55%),
+radial-gradient(80% 20%, #e6e6e6 0%, transparent 55%), 
+radial-gradient(60% 80%,  #ffffff 0%, transparent 60%),
+radial-gradient(30% 70%, #dff3e8 0%, transparent 60%);
 
 filter: blur(30px)
 tranform: scale(1.1);
 
-background-size: 400% 400%;
-animation: move 12s ease infinite;
+background-size: 200% 200%;
+transition: background-position 0.3s ease;
 }
 
 @keyframes move {
