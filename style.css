@@ -42,11 +42,27 @@ animation: move 12s ease infinite;
 #typing {
 font-size: clamp(2.5rem, 6vw, 5rem);
 font-weight: 600;
-color: #000;
-backdrop-filter: blur(14px);
--webkit-backdrop-filter: blur(14px);
-border-radius: 12px;
-padding: 20px 40px;
+
+/* TEXT */
+color: rgba(20, 20, 0.85);
+
+/* GLASS PANEL */
+background: rgba(255, 255, 255, 0.35);
+backdrop-filter: blur(16px) saturate(120%)
+-webkit-backdrop-filter: blur(16px) saturate(120%)
+
+border-radius: 16px;
+padding: 24px 48px;
+
+/* GLASS EDGE */ 
+border: 1px solid rgba(255, 255, 255, 0.4);
+
+/* DEPTH */ 
+box-shadow:
+0 10px 30px rgba(0, 0, 0, 0.12), 
+inset 0 10px 0 rgba(255, 255, 255, 0.4);
+
+position: relative:
 z-index: 2;
 }
 
