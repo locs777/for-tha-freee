@@ -1,7 +1,7 @@
 // Typying effect
 const text = " for tha freee";
 let i = 0;
-const typinmg = document.getElementById("typing");
+const typing = document.getElementById("typing");
 
 function type () {
   if (i <text.length) {
